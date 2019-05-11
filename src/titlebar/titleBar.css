@@ -1,0 +1,44 @@
+.movieSearchBox{
+    position: absolute;
+    background: white;
+    border-radius: 30px;
+    height: 40px;
+    padding: 5px;
+    top: 3%;
+    right: 5%;
+    margin-right: 0%;
+  }
+  
+  .movieSearchBox:hover > .movieSearchText{
+    width: 250px;
+    padding: 0 6px;
+  }
+  
+  .movieSearchBox:hover > .movieSearchBtn{
+    background: #2f3640;
+  }
+  
+  .movieSearchBtn{
+    color: coral;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+  }
+  
+  .movieSearchText{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #2f3640;
+    font-size: 16px;
+    transition: 0.5s;
+    line-height: 40px;
+    width: 0px;
+  }

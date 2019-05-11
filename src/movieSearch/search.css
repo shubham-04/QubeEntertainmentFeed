@@ -1,0 +1,74 @@
+.divRepeat{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; 
+    margin-top: 5%;
+}
+
+.divTypeFilter{
+    margin:1%;
+    margin-bottom: 0%;
+    font-family: cursive;
+}
+
+.divTypeFilter,p{
+    font-size: 1.25em;
+}
+.divTypeFilter,span{
+    margin-left:1%; 
+}
+
+.typeRadioBut{
+    cursor: pointer;
+    margin-right: 1%;
+}
+
+.typeRadioBut::after {
+  font-weight: 100;
+}
+.typeRadioBut:checked {
+    height: 2em;
+    width: 2em; 
+    transition: 300ms;   
+}
+
+.typeName {
+    margin-left: .35em;
+}
+
+.modalDiv{
+    background-color: black;
+    width: 960px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0%;
+    position: fixed;
+    top: inherit;
+    left: inherit;
+    height: 40px;
+  }
+  
+  .modalHeader{
+    font-family: cursive;
+    font-size: 1.5vmax;
+    padding-left:5%;
+    color: white;
+  }
+
+  .deleteIcon{
+    float:right;
+    color:white;
+    cursor:pointer;
+    width:40px;
+    height:40px;
+  }
+
+  .movieInfo{
+      padding-left: 1%;
+      padding-bottom: 1%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .movieDiv{
+      margin:1%;
+  }
