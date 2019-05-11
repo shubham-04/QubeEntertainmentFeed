@@ -46,9 +46,9 @@ class Search extends Component {
     this.setState({isLoading:true});
     let filterUrl=''
     if(type!==''){
-      filterUrl='http://www.omdbapi.com/?s='+title+'&apikey=dd2171f8&type='+type;
+      filterUrl='https://www.omdbapi.com/?s='+title+'&apikey=dd2171f8&type='+type;
     } else{
-      filterUrl='http://www.omdbapi.com/?s='+title+'&apikey=dd2171f8';
+      filterUrl='https://www.omdbapi.com/?s='+title+'&apikey=dd2171f8';
     }
     fetch(filterUrl,{
             method:'GET'
@@ -74,7 +74,7 @@ class Search extends Component {
       this.setState({movieInfo:{}});
     }  else {
       this.setState({isLoading:true});
-      fetch('http://www.omdbapi.com/?apikey=dd2171f8&i='+id,{
+      fetch('https://www.omdbapi.com/?apikey=dd2171f8&i='+id,{
         method:'GET'
         }
         ).then(response => {return response.json();})
