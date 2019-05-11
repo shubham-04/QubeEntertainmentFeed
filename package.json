@@ -5,6 +5,7 @@
   "dependencies": {
     "imdb-api": "^4.0.2",
     "react": "^16.8.6",
+    "react-icons": "^3.6.1",
     "react-awesome-modal": "^2.0.5",
     "react-dom": "^16.8.6",
     "react-modal": "^3.8.1",
@@ -34,7 +35,6 @@
     ]
   },
   "devDependencies": {
-    "react-icons": "^3.6.1",
     "react-loading": "^2.0.3"
   }
 }
