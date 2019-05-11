@@ -64,6 +64,9 @@ class Search extends Component {
             if(findresponse.Search !== ""){
                 let imdbID=[];
                 for(let i in findresponse.Search){
+                    if(findresponse.Search[i].Poster==='N/A'){
+                      findresponse.Search[i].Poster='https://m.media-amazon.com/images/G/01/imdb/images/nopicture/32x44/film-3119741174._CB483525279_.png';
+                    }
                     if(imdbID.indexOf(findresponse.Search[i].imdbID) === -1) {
                        imdbID.push(findresponse.Search[i].imdbID) 
                         temp.push(findresponse.Search[i]);
@@ -151,7 +154,11 @@ class Search extends Component {
 						<span className="modalHeader">{this.state.movieInfo.Title}</span>
             <TiDelete className="deleteIcon" onClick={this.loadSearchData}/>
 						</div>
-            <div className='movieDiv'><img style={{marginTop:'7%',float:"left",width:'35%'}} src={this.state.movieInfo.Poster} alt="movie"></img>
+            <div className='movieDiv'>
+            {this.state.movieInfo.Poster==='N/A'?
+                    <img style={{marginTop:'7%',float:"left",width:'35%'}} src='https://m.media-amazon.com/images/G/01/imdb/images/nopicture/32x44/film-3119741174._CB483525279_.png' alt="movie"></img>
+                    :<img style={{marginTop:'7%',float:"left",width:'35%'}} src={this.state.movieInfo.Poster} alt="movie"></img>
+            }
             <div style={{marginTop:'7%',float:"right",width:'65%',display:'flex'}}>
             <table><tbody>
               <tr><td className='movieInfo'>Title:</td><td className='movieInfo'>{this.state.movieInfo.Title}</td></tr>
