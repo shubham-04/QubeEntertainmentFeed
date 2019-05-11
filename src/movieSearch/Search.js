@@ -37,6 +37,11 @@ class Search extends Component {
     this.loadSearchData= this.loadSearchData.bind(this);
     this.serachQre=""; 
   }
+	
+  componentWillUnmount(){
+    title='';
+  }
+	
   typechange(e){
     type=e.target.value;
     this.movieSearch();
